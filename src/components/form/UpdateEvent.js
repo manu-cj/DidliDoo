@@ -1,5 +1,7 @@
 import fetchEvent from "../../lib/fetchEvent";
 import CardAllEvent from "../cardAllEvent";
+import { postAndPatchData } from "../../lib/postAndPatchData.js";
+
 
 export const UpdateEvent = (event) => {
     const modalBody = document.querySelector(".modal-body");

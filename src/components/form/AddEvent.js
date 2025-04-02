@@ -1,4 +1,4 @@
-import { postData } from "../../lib/postAndPatchData.js";
+import { postAndPatchData } from "../../lib/postAndPatchData.js";
 import fetchEvent from "../../lib/fetchEvent.js";
 import CardAllEvent from "../cardAllEvent";
 
