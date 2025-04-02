@@ -1,5 +1,7 @@
 import { Pencil, Trash2 } from 'lucide-static';
 import fetchEvent from '../lib/fetchEvent';
+import { Modal } from './Modal';
+import { UpdateEvent } from './form/UpdateEvent';
 
 export default async function CardAllEvent(event) {
 const main = document.querySelector('main');
@@ -93,5 +95,11 @@ allDates.forEach(date => {
 main.appendChild(cards);
 cards.appendChild(articleHeader);
 cards.appendChild(articleBody);
+
+
+updateIcon.addEventListener('click', ()=> {
+    Modal('Update Event', 'update-event');
+    UpdateEvent(event);
+})
 
 }

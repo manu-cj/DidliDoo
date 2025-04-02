@@ -16,9 +16,6 @@ export const UpdateEvent = (event) => {
 
                 <textarea id="event-description" name="event-description" rows="4" cols="50" placeholder="Event Description">${event.description}</textarea>
                 
-                <label for="event-location">Event Location:</label>
-                <input type="text" id="event-location" name="event-location" value="${event.location}" required>
-                
                 <input type="submit" value="Update"></input>
         `;
 
