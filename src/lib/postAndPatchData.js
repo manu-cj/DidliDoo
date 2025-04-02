@@ -1,8 +1,8 @@
-export const postData = async (url = '', data = {}) => {
+export const postAndPatchData = async (url = '', type, data = {}) => {
     console.log(data);
     
     const response = await fetch(url, {
-        method: 'POST',
+        method: type,
         headers: {
             'Content-Type': 'application/json'
         },

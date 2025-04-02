@@ -1,4 +1,4 @@
-import { postData } from "../../lib/postData";
+import { postData } from "../../lib/postAndPatchData.js";
 import fetchEvent from "../../lib/fetchEvent.js";
 import CardAllEvent from "../cardAllEvent";
 
@@ -52,7 +52,7 @@ export const AddEvent = () => {
         const description = form.querySelector('#event-description').value;
         const dates = Array.from(form.querySelectorAll('input[name="event-date"]')).map(input => input.value);
 
-       postData('http://localhost:3000/api/events', {
+        postAndPatchData('http://localhost:3000/api/events', 'POST', {
             name,
             dates,
             author,

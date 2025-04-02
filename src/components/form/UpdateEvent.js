@@ -1,56 +1,55 @@
+import fetchEvent from "../../lib/fetchEvent";
+import CardAllEvent from "../cardAllEvent";
+
 export const UpdateEvent = (event) => {
-    const modalBody = document.querySelector('.modal-body');
-    const form = document.createElement('form');
-    form.classList.add('add-event-form');
+    const modalBody = document.querySelector(".modal-body");
+    const form = document.createElement("form");
+    form.classList.add("update-event-form");
     form.innerHTML = `
-        <label for="event-name">Event Name:</label>
-        <input type="text" id="event-name" name="event-name" value="${event.name}" required>
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" value="${event.name}" required>
 
-        <label for="Author">Author :</label>
-        <input type="text" id="author" name="author" value="${event.author}" required>
+                <label for="Author">Author :</label>
+                <input type="text" id="author" name="author" value="${event.author}" required>
 
-        <textarea id="event-description" name="event-description" rows="4" cols="50" placeholder="Event Description">${event.description}</textarea>
-        
-        <label for="event-dates">Event Dates:</label>
-        <div id="event-dates">
-            ${event.dates.map(date => `
-                <div class="event-date-item">
-                    <input type="date" name="event-dates[]" value="${date}" required>
-                    <button type="button" class="remove-date">Remove</button>
-                </div>
-            `).join('')}
-        </div>
-        <button type="button" id="add-date">Add Date</button>
-        
-        <label for="event-location">Event Location:</label>
-        <input type="text" id="event-location" name="event-location" value="${event.location}" required>
-        
-        <input type="submit" value="Update"></input>
-    `;
-
-    // Add event listener for adding new date fields
-    const addDateButton = form.querySelector('#add-date');
-    addDateButton.addEventListener('click', () => {
-        const datesContainer = form.querySelector('#event-dates');
-        const newDateField = document.createElement('div');
-        newDateField.classList.add('event-date-item');
-        newDateField.innerHTML = `
-            <input type="date" name="event-dates[]" required>
-            <button type="button" class="remove-date">Remove</button>
+                <textarea id="event-description" name="event-description" rows="4" cols="50" placeholder="Event Description">${event.description}</textarea>
+                
+                <label for="event-location">Event Location:</label>
+                <input type="text" id="event-location" name="event-location" value="${event.location}" required>
+                
+                <input type="submit" value="Update"></input>
         `;
-        datesContainer.appendChild(newDateField);
 
-        // Add event listener for removing the date field
-        newDateField.querySelector('.remove-date').addEventListener('click', () => {
-            newDateField.remove();
-        });
-    });
-
-    // Add event listeners for removing existing date fields
-    form.querySelectorAll('.remove-date').forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.target.closest('.event-date-item').remove();
-        });
-    });
     modalBody.appendChild(form);
-}
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = form.querySelector("#event-name").value;
+        const author = form.querySelector("#author").value;
+        const description = form.querySelector("#event-description").value;
+
+        postAndPatchData(`http://localhost:3000/api/events/${event.id}`, "PATCH", {
+            name,
+            author,
+            description,
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then(() => {
+                console.log("Event updated successfully");
+                fetchEvent("api/events").then((events) => {
+                    const app = document.querySelector("#app");
+                    app.innerHTML = ""; 
+                    events.forEach((event) => {
+                        CardAllEvent(event);
+                    });
+                });
+            })
+            .catch((error) => console.error("Error updating event:", error));
+    });
+};
