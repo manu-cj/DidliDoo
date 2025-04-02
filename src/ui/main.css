@@ -1,8 +1,15 @@
+@import "./cards.css";
+
+
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    font-family: Arial, sans-serif;
     height: 90vh;
     background-color: #f0f0f0;
-}
+  }

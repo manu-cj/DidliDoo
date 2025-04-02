@@ -1,0 +1,75 @@
+.cards {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+}
+
+.articleHeader {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.eventTitle {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.eventDate {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.eventAuthor {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #444;
+    font-style: italic;
+}
+
+.articleBody {
+    padding: 20px;
+}
+
+.eventDescription {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.dates {
+    display: flex;
+    margin: 5px 10px 5px 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #3a55b4;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.date p {
+    width: 30%;
+    background-color: #eef2ff;
+    display: inline-block;
+}
+
+.controlDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
