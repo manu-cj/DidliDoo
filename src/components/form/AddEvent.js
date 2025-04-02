@@ -1,4 +1,6 @@
 import { postData } from "../../lib/postData";
+import fetchEvent from "../../lib/fetchEvent.js";
+import CardAllEvent from "../cardAllEvent";
 
 export const AddEvent = () => {
     const modalBody = document.querySelector('.modal-body');
@@ -50,14 +52,6 @@ export const AddEvent = () => {
         const description = form.querySelector('#event-description').value;
         const dates = Array.from(form.querySelectorAll('input[name="event-date"]')).map(input => input.value);
 
-        // Here you would typically send the data to your server or API
-        console.log({
-            name,
-            author,
-            description,
-            dates,
-            
-        });
        postData('http://localhost:3000/api/events', {
             name,
             dates,
@@ -65,17 +59,24 @@ export const AddEvent = () => {
             description,
         }).then(() => {
             console.log('Event added successfully');
+            fetchEvent('api/events').then((events) => {
+             ;
+                const main = document.querySelector('main');
+                main.innerHTML = '';
+                events.forEach(event => {
+                    CardAllEvent(event); 
+                });
+            }
+            ).catch((error) => {
+                console.error('Error fetching events:', error);
+            });
+            
         }).catch((error) => {
             console.error('Error adding event:', error);
         });
 
-        // Optionally, reset the form after submission
-        form.reset();
-        dateCount = 1;
-        eventDatesContainer.innerHTML = `
-            <label for="event-date-1">Event Date:</label>
-            <input type="date" id="event-date-1" name="event-date" required>
-        `;
+        const modal = document.querySelector('.modal');
+        modal.remove();
     });
 
     modalBody.appendChild(form);
