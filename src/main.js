@@ -11,7 +11,7 @@ const main = document.createElement('main');
 app.appendChild(main);
 
 
-await fetchEvent(`api/events/`);
+await fetchEvent(`api/attendees/`);
 const events = await fetchEvent(`api/events/`);
 
 events.forEach(event => {
