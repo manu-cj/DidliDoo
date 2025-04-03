@@ -57,10 +57,10 @@ articleBody.appendChild(attendeeDiv);
 
 const resulatAttendeeP = [];//test tableau
 const resultDateP = [];//test tableau
-const comparaisonAttendeePDateP = [];//test tableau
+const comparaisonAttendeePDateP = [];//test tableau 
 
-console.log(resulatAttendeeP);
-console.log(resultDateP);
+// console.log(resulatAttendeeP);//[0].event[0].dates
+// console.log(resultDateP); //date.date
 
 
 
@@ -72,7 +72,7 @@ attendees.forEach(attendee => {
             attendeeP.className ="attendeeDiv";
             attendeeP.textContent = attendee.name;
             attendeeDiv.appendChild(attendeeP);
-            resulatAttendeeP.push(attendee);//test tableau
+            resulatAttendeeP.push(attendee.name);//test tableau
         }
     })
 })
@@ -83,12 +83,60 @@ dates.className = "dates";
 articleBody.appendChild(dates);
 const allDates = event.dates;
 allDates.forEach(date => {
+    const divDateP = document.createElement('div');
+    divDateP.classList = "divDateP";
+   
+
     const dateP = document.createElement('p');
     dateP.className = "date";
     dateP.textContent = date.date;
-    dates.appendChild(dateP);
-    resultDateP.push(date);//test tableau
+    dates.appendChild(divDateP);
+    divDateP.appendChild(dateP);
+    // resultDateP.push(date.date);//test tableau
+
+
+    date.attendees.forEach(participant => {
+    console.log(participant);
+    if ( participant.available === true){
+        const checkGreen = document.createElement('div');
+        checkGreen.className = "checkGreen";
+        dateP.appendChild(checkGreen);
+        checkGreen.innerText = participant.name;
+
+    } else {
+        const checkRed = document.createElement('div');
+        checkRed.className = "checkRed";
+        dateP.appendChild(checkRed);
+        checkRed.innerText = participant.name;
+    }
+
+
+    })
 });
+
+// const a = event;
+// a.forEach(element => {
+
+// })
+
+
+
+// const maxLength = Math.max(resulatAttendeeP.length, resultDateP.length);
+
+// for (let index = 0; index < maxLength; index++) {
+//     const attendee = resulatAttendeeP[index];
+//     const date = resultDateP[index];
+
+//     if (attendee === undefined) {
+//         comparaisonAttendeePDateP.push(`Pas de participant à l'index ${index}`);
+//     } else if (date === undefined) {
+//         comparaisonAttendeePDateP.push(`Pas de date à l'index ${index}`);
+//     } else {
+//         comparaisonAttendeePDateP.push(`Participant: ${attendee}, Date: ${date}`);
+//     }
+// }
+
+// console.log(comparaisonAttendeePDateP);
 
 
 

@@ -74,3 +74,11 @@
     justify-content: flex-end;
     gap: 10px;
 }
+
+.checkGreen {
+    background-color: greenyellow;
+}
+
+.checkRed {
+    background-color:red;
+}
