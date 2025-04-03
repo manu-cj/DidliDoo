@@ -5,6 +5,7 @@
 @import './ui/buttons.css';
 @import './ui/modal.css';
 @import './ui/form.css';
+@import './ui/notification.css';
 
 * {
   margin: 0;

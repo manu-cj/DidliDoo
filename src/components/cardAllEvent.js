@@ -48,7 +48,7 @@ eventDescription.className = "eventDescription";
 eventDescription.textContent = event.description;
 articleBody.appendChild(eventDescription);
 
-const attendees = await fetchEvent(`api/attendees/`);
+// const attendees = await fetchEvent(`api/attendees/`);
 
 const attendeeDiv = document.createElement('div')
 attendeeDiv.className = "attendeeDiv";
@@ -59,8 +59,8 @@ const resulatAttendeeP = [];//test tableau
 const resultDateP = [];//test tableau
 const comparaisonAttendeePDateP = [];//test tableau
 
-console.log(resulatAttendeeP);
-console.log(resultDateP);
+// console.log(resulatAttendeeP);
+// console.log(resultDateP);
 
 
 
@@ -88,6 +88,8 @@ allDates.forEach(date => {
     dateP.textContent = date.date;
     dates.appendChild(dateP);
     resultDateP.push(date);//test tableau
+    console.log(date);
+    
 });
 
 
