@@ -2,6 +2,7 @@ import { Pencil, Trash2 } from 'lucide-static';
 import fetchEvent from '../lib/fetchEvent';
 import { Modal } from './Modal';
 import { UpdateEvent } from './form/UpdateEvent';
+import { DeleteEvent } from './form/DeleteEvent';
 
 export default async function CardAllEvent(event) {
 const main = document.querySelector('main');
@@ -48,7 +49,7 @@ eventDescription.className = "eventDescription";
 eventDescription.textContent = event.description;
 articleBody.appendChild(eventDescription);
 
-// const attendees = await fetchEvent(`api/attendees/`);
+const attendees = await fetchEvent(`api/attendees/`);
 
 const attendeeDiv = document.createElement('div')
 attendeeDiv.className = "attendeeDiv";
@@ -93,7 +94,6 @@ allDates.forEach(date => {
 });
 
 
-
 main.appendChild(cards);
 cards.appendChild(articleHeader);
 cards.appendChild(articleBody);
@@ -102,6 +102,11 @@ cards.appendChild(articleBody);
 updateIcon.addEventListener('click', ()=> {
     Modal('Update Event', 'update-event');
     UpdateEvent(event);
+})
+
+deleteIcon.addEventListener('click', () => {
+    Modal('Delete Event', 'delete-event');
+    DeleteEvent(event.id, event.name);
 })
 
 }

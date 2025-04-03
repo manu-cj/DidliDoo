@@ -44,7 +44,7 @@ export const UpdateEvent = (event) => {
     
       // Send PATCH request to update the event
       const response = await postAndPatchData(`http://localhost:3000/api/events/${event.id}`, "PATCH", {
-        naqme,
+        name,
         author,
         description,
       });

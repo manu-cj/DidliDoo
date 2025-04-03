@@ -8,6 +8,7 @@ export const AddEvent = () => {
         console.error('Modal body not found');
         return;
     }
+  
 
     const form = document.createElement('form');
     form.classList.add('add-event-form');
@@ -30,6 +31,7 @@ export const AddEvent = () => {
         <input type="submit" value="Add">
     `;
 
+    
     const addDateButton = form.querySelector('#add-date-button');
     const eventDatesContainer = form.querySelector('#event-dates-container');
     let dateCount = 1;
