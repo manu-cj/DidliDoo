@@ -1,7 +1,8 @@
-import { Pencil, Trash2 } from 'lucide-static';
+import { Pencil, Trash2, User2, UserPlus } from 'lucide-static';
 import fetchEvent from '../lib/fetchEvent';
 import { Modal } from './Modal';
 import { UpdateEvent } from './form/UpdateEvent';
+import AddUser from './form/AddUser';
 
 export default async function CardAllEvent(event) {
 const main = document.querySelector('main');
@@ -16,11 +17,18 @@ controlDiv.className = "controlDiv";
 articleHeader.appendChild(controlDiv);
 
 const updateIcon = document.createElement('i');
+updateIcon.className ="updateIcon";
 updateIcon.innerHTML = Pencil;
 
 const deleteIcon = document.createElement('i');
 deleteIcon.innerHTML = Trash2;
+deleteIcon.className ="deleteIcon";
 
+const addUserIcon = document.createElement('i');
+addUserIcon.className ="addUserIcon";
+addUserIcon.innerHTML = UserPlus;
+
+controlDiv.appendChild(addUserIcon);
 controlDiv.appendChild(updateIcon);
 controlDiv.appendChild(deleteIcon);
 
@@ -70,7 +78,7 @@ attendees.forEach(attendee => {
         if (event.id === attendeeEvent.id) {
             const attendeeP = document.createElement('p');
             attendeeP.className ="attendeeDiv";
-            attendeeP.textContent = attendee.name;
+            // attendeeP.textContent = attendee.name;
             attendeeDiv.appendChild(attendeeP);
             resulatAttendeeP.push(attendee.name);//test tableau
         }
@@ -109,8 +117,7 @@ allDates.forEach(date => {
         dateP.appendChild(checkRed);
         checkRed.innerText = participant.name;
     }
-
-
+    
     })
 });
 
@@ -150,4 +157,9 @@ updateIcon.addEventListener('click', ()=> {
     UpdateEvent(event);
 })
 
+addUserIcon.addEventListener('click', ()=> {
+    Modal('Add User', 'Add User');
+    AddUser(event.id,event.dates);
+
+})
 }

@@ -30,6 +30,7 @@
     margin: 5px 0;
     font-size: 0.9rem;
     color: #666;
+
 }
 
 .eventAuthor {
@@ -77,8 +78,40 @@
 
 .checkGreen {
     background-color: greenyellow;
+    padding: 10px;
+    border: ridge 2px green;
+    margin: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #ffffff;
 }
 
 .checkRed {
-    background-color:red;
+    background-color:rgb(184, 53, 53);
+    padding: 10px;
+    border: ridge 2px rgb(183, 3, 3);
+    margin: 2px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: #ffffff;
+}
+
+.deleteIcon:hover {
+color: red;
+transition: all 0.5s ease-in-out;
+}
+
+.updateIcon:hover {
+color: lawngreen;
+transition: all 0.5s ease-in-out;
+}
+
+.addUserIcon:hover {
+    color: rgb(0, 155, 252);
+    transition: all 0.5s ease-in-out;
+    }
+
+.date {
+    text-align: center;
+    font-weight: bolder;
 }
