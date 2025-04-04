@@ -2,6 +2,7 @@ import { Pencil, Trash2, User2, UserPlus } from 'lucide-static';
 import fetchEvent from '../lib/fetchEvent';
 import { Modal } from './Modal';
 import { UpdateEvent } from './form/UpdateEvent';
+import { DeleteEventModal } from './form/DeleteEventModal';
 import AddUser from './form/AddUser';
 import { DeleteEvent } from './form/DeleteEvent';
 
@@ -169,4 +170,9 @@ addUserIcon.addEventListener('click', ()=> {
     AddUser(event.id,event.dates);
 
 })
+
+deleteIcon.addEventListener("click", () => {
+    Modal("Delete Event", "delete-event");
+    DeleteEventModal(event, deleteIcon);
+});
 }
