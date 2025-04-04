@@ -67,9 +67,33 @@ textarea {
     resize: vertical;
     min-height: 100px;
 }
+
+#event-dates-container {
+    max-height: 200px;
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
 input[type="date"] {
     background-color: #282c34;
     color: #abb2bf;
+    padding: 0.8rem;
+    border: 1px solid #3b4048;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="date"]:focus {
+    border-color: #61afef;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(97, 175, 239, 0.2);
 }
 input[type="checkbox"] {
     width: 20px;

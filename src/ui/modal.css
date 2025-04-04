@@ -17,6 +17,8 @@
     padding: 25px;
     border-radius: 6px;
     width: 70%;
+    max-height: 95%;
+    overflow-y: auto;
     max-width: 800px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     border: 1px solid #3b4048;

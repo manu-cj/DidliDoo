@@ -38,7 +38,18 @@ export const AddEvent = () => {
     const eventDatesContainer = form.querySelector('#event-dates-container');
     let dateCount = 1;
 
+    const errorMessage = document.createElement('p');
+    errorMessage.style.color = 'red';
+    errorMessage.style.display = 'none';
+    form.insertBefore(errorMessage, eventDatesContainer);
+
     addDateButton.addEventListener('click', () => {
+        if (dateCount >= 6) {
+            errorMessage.textContent = 'You can only add up to 6 dates.';
+            errorMessage.style.display = 'block';
+            return;
+        }
+        errorMessage.style.display = 'none';
         dateCount++;
         const newDateInput = document.createElement('div');
         newDateInput.innerHTML = `
