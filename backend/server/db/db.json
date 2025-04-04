@@ -173,7 +173,7 @@
         "dates": [
           {
             "date": "2022-03-17",
-            "available": false
+            "available": true
           },
           {
             "date": "2022-03-21",
