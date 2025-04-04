@@ -1,18 +1,5 @@
 [
   {
-    "id": "06a1b760f1c6",
-    "name": "Hanae Kinney",
-    "author": "Praesentium consecte",
-    "description": "Velit omnis reprehen",
-    "dates": [
-      "2022-06-27"
-    ],
-    "created_at": "2025-04-03T07:45:58.299Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-03T07:45:58.299Z",
-    "attendees": []
-  },
-  {
     "id": "4e4acab8efdd",
     "name": "Hanae Kinney",
     "author": "Praesentium consecte",
@@ -23,19 +10,6 @@
     "created_at": "2025-04-03T07:45:57.593Z",
     "num_modification": 0,
     "last_modification": "2025-04-03T07:45:57.593Z",
-    "attendees": []
-  },
-  {
-    "id": "bfcc7b6515f6",
-    "name": "Hanae Kinney",
-    "author": "Praesentium consecte",
-    "description": "Velit omnis reprehen",
-    "dates": [
-      "2022-06-27"
-    ],
-    "created_at": "2025-04-03T07:45:56.666Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-03T07:45:56.666Z",
     "attendees": []
   },
   {
@@ -70,19 +44,6 @@
     "created_at": "2025-04-02T12:56:16.035Z",
     "num_modification": 2,
     "last_modification": "2025-04-03T07:03:15.691Z",
-    "attendees": []
-  },
-  {
-    "id": "1d918de94716",
-    "name": "Denise Berger",
-    "author": "Voluptatum non liber",
-    "description": "Rerum placeat provi",
-    "dates": [
-      "1988-03-25"
-    ],
-    "created_at": "2025-04-02T12:54:45.549Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-02T12:54:45.549Z",
     "attendees": []
   },
   {

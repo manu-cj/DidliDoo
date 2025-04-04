@@ -4,7 +4,6 @@ import { Modal } from './Modal';
 import { UpdateEvent } from './form/UpdateEvent';
 import { DeleteEventModal } from './form/DeleteEventModal';
 import AddUser from './form/AddUser';
-import { DeleteEvent } from './form/DeleteEvent';
 
 export default async function CardAllEvent(event) {
 const main = document.querySelector('main');
@@ -157,11 +156,6 @@ cards.appendChild(articleBody);
 updateIcon.addEventListener('click', ()=> {
     Modal('Update Event', 'update-event');
     UpdateEvent(event);
-})
-
-deleteIcon.addEventListener('click', () => {
-    Modal('Delete Event', 'delete-event');
-    DeleteEvent(event.id, event.name);
 })
 
 
