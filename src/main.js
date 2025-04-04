@@ -11,8 +11,10 @@ const main = document.createElement('main');
 app.appendChild(main);
 
 
-await fetchEvent(`api/attendees/`);
+const attendeestest = await fetchEvent(`api/attendees/`);
+console.log(attendeestest);
 const events = await fetchEvent(`api/events/`);
+console.log(events);
 
 events.forEach(event => {
     CardAllEvent(event)
