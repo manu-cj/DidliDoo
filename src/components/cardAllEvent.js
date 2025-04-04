@@ -129,38 +129,14 @@ if (bestDate.length > 0) {
         const dateElements = dates.querySelectorAll('.date');
         dateElements.forEach(dateElement => {
             if (dateElement.textContent.includes(best.date)) {
-                dateElement.style.border = '3px solid green';
+                dateElement.style.boxShadow = '0 0 15px 5px rgba(20, 165, 20, 0.47)';
+                // dateElement.style.border = '1px solid green';
                 dateElement.style.borderRadius = '60px';
             }
         });
     });
 }
 console.log(bestDate);
-
-// const a = event;
-// a.forEach(element => {
-
-// })
-
-
-
-// const maxLength = Math.max(resulatAttendeeP.length, resultDateP.length);
-
-// for (let index = 0; index < maxLength; index++) {
-//     const attendee = resulatAttendeeP[index];
-//     const date = resultDateP[index];
-
-//     if (attendee === undefined) {
-//         comparaisonAttendeePDateP.push(`Pas de participant à l'index ${index}`);
-//     } else if (date === undefined) {
-//         comparaisonAttendeePDateP.push(`Pas de date à l'index ${index}`);
-//     } else {
-//         comparaisonAttendeePDateP.push(`Participant: ${attendee}, Date: ${date}`);
-//     }
-// }
-
-// console.log(comparaisonAttendeePDateP);
-
 
 
 main.appendChild(cards);
