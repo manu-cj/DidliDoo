@@ -1,104 +1,5 @@
 [
   {
-    "id": "4e4acab8efdd",
-    "name": "Hanae Kinney",
-    "author": "Praesentium consecte",
-    "description": "Velit omnis reprehen",
-    "dates": [
-      "2022-06-27"
-    ],
-    "created_at": "2025-04-03T07:45:57.593Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-03T07:45:57.593Z",
-    "attendees": []
-  },
-  {
-    "id": "4a662fc31c83",
-    "name": "Hanae Kinney",
-    "author": "Praesentium consecte",
-    "description": "Velit omnis reprehen",
-    "dates": [
-      "2022-06-27"
-    ],
-    "created_at": "2025-04-03T07:45:50.103Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-03T07:45:50.103Z",
-    "attendees": []
-  },
-  {
-    "id": "a8234762e4a3",
-    "name": "Tad Todds",
-    "author": "Pariatur Aut eaque ",
-    "description": "Natus quis animi de",
-    "dates": [
-      "2022-12-01",
-      "1982-07-13",
-      "1993-02-04",
-      "1976-03-15",
-      "1973-09-16",
-      "2025-01-03",
-      "2007-09-14",
-      "1996-12-12",
-      "2020-12-05"
-    ],
-    "created_at": "2025-04-02T12:56:16.035Z",
-    "num_modification": 2,
-    "last_modification": "2025-04-03T07:03:15.691Z",
-    "attendees": []
-  },
-  {
-    "id": "a39ac56204b7",
-    "name": "Francesca Durham",
-    "author": "Et unde sint quas re",
-    "description": "Delectus id eum nos",
-    "dates": [
-      "2022-11-24"
-    ],
-    "created_at": "2025-04-02T12:54:04.417Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-02T12:54:04.417Z",
-    "attendees": []
-  },
-  {
-    "id": "dfd3eeb8b76b",
-    "name": "Rae Singleton",
-    "author": "Ut consectetur sequ",
-    "description": "Aut dolor eum proide",
-    "dates": [
-      "2020-08-25"
-    ],
-    "created_at": "2025-04-02T12:52:34.729Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-02T12:52:34.729Z",
-    "attendees": []
-  },
-  {
-    "id": "5cd9b4e27c31",
-    "name": "Cole Frazier",
-    "author": "Quisquam do non sit ",
-    "description": "Elit pariatur Saep",
-    "dates": [
-      "2002-06-07"
-    ],
-    "created_at": "2025-04-02T12:29:41.071Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-02T12:29:41.071Z",
-    "attendees": []
-  },
-  {
-    "id": "5bae94102b77",
-    "name": "Price Velez",
-    "author": "Nemo illum numquam ",
-    "description": "Porro nostrud unde n",
-    "dates": [
-      "2000-05-07"
-    ],
-    "created_at": "2025-04-02T11:54:37.130Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-02T11:54:37.130Z",
-    "attendees": []
-  },
-  {
     "id": "de48f1cffb67",
     "name": "Reese Alexander",
     "author": "Eius molestiae aut q",
@@ -251,6 +152,31 @@
           {
             "date": "2022-03-11",
             "available": false
+          },
+          {
+            "date": "2022-03-12",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "bobbob",
+        "dates": [
+          {
+            "date": "2022-01-10",
+            "available": false
+          },
+          {
+            "date": "2022-02-10",
+            "available": false
+          },
+          {
+            "date": "2022-03-10",
+            "available": true
+          },
+          {
+            "date": "2022-03-11",
+            "available": true
           },
           {
             "date": "2022-03-12",

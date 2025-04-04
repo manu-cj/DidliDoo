@@ -64,13 +64,7 @@ attendeeDiv.className = "attendeeDiv";
 articleBody.appendChild(attendeeDiv);
 
 
-const resulatAttendeeP = [];//test tableau
-const resultDateP = [];//test tableau
-const comparaisonAttendeePDateP = [];//test tableau 
-
-// console.log(resulatAttendeeP);//[0].event[0].dates
-// console.log(resultDateP); //date.date
-
+const resulatAttendeeP = [];
 
 
 attendees.forEach(attendee => {
@@ -79,9 +73,9 @@ attendees.forEach(attendee => {
         if (event.id === attendeeEvent.id) {
             const attendeeP = document.createElement('p');
             attendeeP.className ="attendeeDiv";
-            // attendeeP.textContent = attendee.name;
+
             attendeeDiv.appendChild(attendeeP);
-            resulatAttendeeP.push(attendee.name);//test tableau
+            resulatAttendeeP.push(attendee.name);
         }
     })
 })
@@ -101,8 +95,7 @@ allDates.forEach(date => {
     dateP.textContent = date.date;
     dates.appendChild(divDateP);
     divDateP.appendChild(dateP);
-    // resultDateP.push(date.date);//test tableau
-
+  
 
     date.attendees.forEach(participant => {
     if ( participant.available === true){
@@ -120,31 +113,6 @@ allDates.forEach(date => {
     
     })
 });
-
-// const a = event;
-// a.forEach(element => {
-
-// })
-
-
-
-// const maxLength = Math.max(resulatAttendeeP.length, resultDateP.length);
-
-// for (let index = 0; index < maxLength; index++) {
-//     const attendee = resulatAttendeeP[index];
-//     const date = resultDateP[index];
-
-//     if (attendee === undefined) {
-//         comparaisonAttendeePDateP.push(`Pas de participant à l'index ${index}`);
-//     } else if (date === undefined) {
-//         comparaisonAttendeePDateP.push(`Pas de date à l'index ${index}`);
-//     } else {
-//         comparaisonAttendeePDateP.push(`Participant: ${attendee}, Date: ${date}`);
-//     }
-// }
-
-// console.log(comparaisonAttendeePDateP);
-
 
 
 main.appendChild(cards);

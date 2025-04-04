@@ -1,10 +1,32 @@
 footer {
-    background-color: #282c34;
-    color: white;
+    background: #282c34;
+    color: #abb2bf;
     text-align: center;
     padding: 20px;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+    border-top: 2px solid #3b4048;
+    z-index: 100;
+}
+
+footer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #61afef, #c678dd, #61afef, transparent);
+}
+
+footer:after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(97, 175, 239, 0.3);
 }
