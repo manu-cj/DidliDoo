@@ -163,10 +163,6 @@ deleteIcon.addEventListener('click', () => {
     DeleteEvent(event.id, event.name);
 })
 
-deleteIcon.addEventListener('click', () => {
-    Modal('Delete Event', 'delete-event');
-    DeleteEvent(event.id, event.name);
-})
 
 addUserIcon.addEventListener('click', ()=> {
     Modal('Add User', 'Add User');
