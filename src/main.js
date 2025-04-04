@@ -12,9 +12,7 @@ app.appendChild(main);
 
 
 const attendeestest = await fetchEvent(`api/attendees/`);
-console.log(attendeestest);
 const events = await fetchEvent(`api/events/`);
-console.log(events);
 
 events.forEach(event => {
     CardAllEvent(event)
