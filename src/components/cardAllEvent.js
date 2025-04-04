@@ -40,7 +40,9 @@ articleHeader.appendChild(eventTitle);
 
 const eventDate = document.createElement('p');
 eventDate.className = "eventDate";
-eventDate.textContent = event.created_at;
+eventDate.textContent = new Date(event.last_modification) > new Date(event.created_at) 
+    ? `Last modified: ${new Date(event.last_modification).toLocaleString()}` 
+    : `Created at: ${new Date(event.created_at).toLocaleString()}`;
 articleHeader.appendChild(eventDate);
 
 const eventAuthor = document.createElement('p');
