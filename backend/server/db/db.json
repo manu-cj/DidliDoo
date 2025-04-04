@@ -1,18 +1,5 @@
 [
   {
-    "id": "de48f1cffb67",
-    "name": "Reese Alexander",
-    "author": "Eius molestiae aut q",
-    "description": "Cillum aspernatur ea",
-    "dates": [
-      "2002-09-19"
-    ],
-    "created_at": "2025-04-02T11:52:44.997Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-02T11:52:44.997Z",
-    "attendees": []
-  },
-  {
     "id": "e59c907db8aa",
     "name": "Deirdre Ray",
     "author": "Aliquip exercitation",
@@ -181,6 +168,31 @@
           {
             "date": "2022-03-12",
             "available": false
+          }
+        ]
+      },
+      {
+        "name": "shish",
+        "dates": [
+          {
+            "date": "2022-01-10",
+            "available": false
+          },
+          {
+            "date": "2022-02-10",
+            "available": true
+          },
+          {
+            "date": "2022-03-10",
+            "available": false
+          },
+          {
+            "date": "2022-03-11",
+            "available": true
+          },
+          {
+            "date": "2022-03-12",
+            "available": true
           }
         ]
       }

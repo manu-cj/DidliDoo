@@ -44,22 +44,6 @@ export default function AddUser(id,dates) {
     button.textContent = 'Add';
     form.appendChild(button);
 
-//     form.onSubmit = (event) => {
-//         event.preventDefault();
-//         const name = document.querySelector('#addUser').value;
-//         const dates = [];
-//         const dateAddLabel = document.querySelectorAll('.addUserLabel');
-//         const dateAddInput = document.querySelectorAll('.addUserInput');
-
-//    for (let i = 0; i < dateAddLabel.length; i++) {
-//         console.log(dateAddLabel[i])
-//    }
-
-        
-//         console.log(dates);
-
-//     };
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const name = document.querySelector('#addUser').value;
@@ -67,11 +51,6 @@ form.addEventListener('submit', (event) => {
     const dateCheckboxes = document.querySelectorAll('.addUserInput');
     const label = document.querySelectorAll('.addUserLabel');
 
-    // dateCheckboxes.forEach(checkbox => {
-    //     if (checkbox.checked) {
-    //         selectedDates.push(checkbox.value);
-    //     }
-    // });
 
     for (let i = 0; i < label.length; i++ ) {
         selectedDates.push({date:label[i].textContent,available:dateCheckboxes[i].checked})
