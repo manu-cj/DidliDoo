@@ -49,8 +49,7 @@ input[type="submit"]:hover {
   cursor: pointer;
   color: #e06c75;
   transition: all 0.3s ease;
-  width: 36px;
-  height: 36px;
+  width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,4 +131,8 @@ i {
 i:hover {
     transform: scale(1.2);
     color: #61afef;
+}
+
+#add-date-button {
+    width: max-content;
 }

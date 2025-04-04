@@ -28,6 +28,7 @@ export default function AddUser(id,dates) {
         const addUserInput = document.createElement('input');
         const addUserLabel = document.createElement('label');
         addUserInput.className = "addUserInput";  //+1
+        addUserInput.placeholder = "Add User";
         addUserLabel.className = "addUserLabel";
         addUserLabel.textContent = date.date;  //+1
         addUserInput.type = "checkbox";
@@ -37,12 +38,23 @@ export default function AddUser(id,dates) {
         datesDiv.appendChild(addUserInput);    
     });
 
-    
+    const buttonContainer = document.createElement('div');
+    buttonContainer.id = "button-container";
+    form.appendChild(buttonContainer);
     const button = document.createElement('input');
     button.type = 'submit';
     button.className = "buttonAdd";
-    button.textContent = 'Add';
-    form.appendChild(button);
+    button.value = 'Add';
+    buttonContainer.appendChild(button);
+
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+    closeButton.classList.add('modal-close');
+    buttonContainer.appendChild(closeButton);
+    closeButton.addEventListener('click', () => {
+        const modal = document.querySelector('.modal');
+        modal.remove();
+    });
 
 //     form.onSubmit = (event) => {
 //         event.preventDefault();

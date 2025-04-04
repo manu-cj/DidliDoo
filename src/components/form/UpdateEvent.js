@@ -23,9 +23,20 @@ export const UpdateEvent = (event) => {
     <label for="event-description">Event Description:</label>
     <textarea id="event-description" name="event-description" rows="4" cols="50" placeholder="Event Description" required>${event.description}</textarea>
     
-    <input type="submit" value="Update">
+    <div id="button-container">
+       <input type="submit" value="Update">
+    </div>
   `;
 
+  const buttonContainer = form.querySelector('#button-container');
+  const closeButton = document.createElement('button');
+  closeButton.textContent = 'Close';
+  closeButton.classList.add('modal-close');
+  buttonContainer.appendChild(closeButton);
+  closeButton.addEventListener('click', () => {
+      const modal = document.querySelector('.modal');
+      modal.remove();
+  });
   // Add submit event listener
   form.addEventListener("submit", async (e) => {
     e.preventDefault();

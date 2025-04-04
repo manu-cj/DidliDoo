@@ -7,8 +7,6 @@ form {
     padding: 1.5rem;
     border-radius: 6px;
     background-color: #21252b;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    border: 1px solid #3b4048;
     position: relative;
 }
 
@@ -68,6 +66,26 @@ label:after {
 textarea {
     resize: vertical;
     min-height: 100px;
+}
+input[type="date"] {
+    background-color: #282c34;
+    color: #abb2bf;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .error-message {

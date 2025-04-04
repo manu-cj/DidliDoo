@@ -27,7 +27,11 @@ export const AddEvent = () => {
         </div>
         <button type="button" id="add-date-button">Add Another Date</button>
 
-        <input type="submit" value="Add">
+        <div id="button-container">
+            <input type="submit" value="Add">
+        </div>
+        
+        
     `;
 
     const addDateButton = form.querySelector('#add-date-button');
@@ -44,6 +48,15 @@ export const AddEvent = () => {
         eventDatesContainer.appendChild(newDateInput);
     });
 
+    const buttonContainer = form.querySelector('#button-container');
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+    closeButton.classList.add('modal-close');
+    buttonContainer.appendChild(closeButton);
+    closeButton.addEventListener('click', () => {
+        const modal = document.querySelector('.modal');
+        modal.remove();
+    });
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 

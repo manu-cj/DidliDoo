@@ -16,13 +16,7 @@ export const Modal = (title, type) => {
     modalBody.classList.add('modal-body');
     const modalFooter = document.createElement('div');
     modalFooter.classList.add('modal-footer');
-    const closeButton = document.createElement('button');
-    closeButton.textContent = 'Close';
-    closeButton.classList.add('modal-close');
-    closeButton.addEventListener('click', () => {
-        app.removeChild(modal);
-    });
-    modalFooter.appendChild(closeButton);
+   
     modalContent.appendChild(modalHeader);
     modalContent.appendChild(modalBody);
     modalContent.appendChild(modalFooter);
