@@ -85,34 +85,82 @@ const dates = document.createElement('div')
 dates.className = "dates";
 articleBody.appendChild(dates);
 const allDates = event.dates;
+const bestDate = [];
 allDates.forEach(date => {
     const divDateP = document.createElement('div');
     divDateP.classList = "divDateP";
-   
+   let count = 0;
 
     const dateP = document.createElement('p');
     dateP.className = "date";
     dateP.textContent = date.date;
     dates.appendChild(divDateP);
     divDateP.appendChild(dateP);
+   
+
   
 
     date.attendees.forEach(participant => {
     if ( participant.available === true){
         const checkGreen = document.createElement('div');
         checkGreen.className = "checkGreen";
-        dateP.appendChild(checkGreen);
+        divDateP.appendChild(checkGreen);
         checkGreen.innerText = participant.name;
+        count++;
+        bestDate.push({ date: date.date, count: count });
+        
 
     } else {
         const checkRed = document.createElement('div');
         checkRed.className = "checkRed";
-        dateP.appendChild(checkRed);
+        divDateP.appendChild(checkRed);
         checkRed.innerText = participant.name;
     }
     
+    
+    
     })
 });
+if (bestDate.length > 0) {
+    const maxCount = Math.max(...bestDate.map(d => d.count));
+    const bestDates = bestDate.filter(d => d.count === maxCount);
+
+    bestDates.forEach(best => {
+        const dateElements = dates.querySelectorAll('.date');
+        dateElements.forEach(dateElement => {
+            if (dateElement.textContent.includes(best.date)) {
+                dateElement.style.border = '3px solid green';
+                dateElement.style.borderRadius = '60px';
+            }
+        });
+    });
+}
+console.log(bestDate);
+
+// const a = event;
+// a.forEach(element => {
+
+// })
+
+
+
+// const maxLength = Math.max(resulatAttendeeP.length, resultDateP.length);
+
+// for (let index = 0; index < maxLength; index++) {
+//     const attendee = resulatAttendeeP[index];
+//     const date = resultDateP[index];
+
+//     if (attendee === undefined) {
+//         comparaisonAttendeePDateP.push(`Pas de participant à l'index ${index}`);
+//     } else if (date === undefined) {
+//         comparaisonAttendeePDateP.push(`Pas de date à l'index ${index}`);
+//     } else {
+//         comparaisonAttendeePDateP.push(`Participant: ${attendee}, Date: ${date}`);
+//     }
+// }
+
+// console.log(comparaisonAttendeePDateP);
+
 
 
 main.appendChild(cards);
