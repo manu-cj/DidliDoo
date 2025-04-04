@@ -219,6 +219,31 @@
             "available": false
           }
         ]
+      },
+      {
+        "name": "bob",
+        "dates": [
+          {
+            "date": "2022-01-10",
+            "available": true
+          },
+          {
+            "date": "2022-02-10",
+            "available": false
+          },
+          {
+            "date": "2022-03-10",
+            "available": true
+          },
+          {
+            "date": "2022-03-11",
+            "available": false
+          },
+          {
+            "date": "2022-03-12",
+            "available": false
+          }
+        ]
       }
     ],
     "created_at": "2021-11-13T14:00",

@@ -104,7 +104,6 @@ allDates.forEach(date => {
 
 
     date.attendees.forEach(participant => {
-    console.log(participant);
     if ( participant.available === true){
         const checkGreen = document.createElement('div');
         checkGreen.className = "checkGreen";
