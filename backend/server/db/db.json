@@ -1,64 +1,29 @@
 [
   {
-    "id": "288f1b8cdf3d",
+    "id": "c443e6a4c06d",
     "name": "Apprenez à maîtriser League of Legends avec Martin : passez de Fer à Diamant en perfectionnant vos stratégies et compétences de jeu",
     "author": "Martin",
     "description": "- Maîtrise des champions, optimisation des builds, vision et positionnement, communication et travail d'équipe.\n\n-Analyse des replays, amélioration de la mécanique, gestion des objectifs, et adaptation aux différents rôles.\n\n-Stratégies de jeu avancées, entraînement intensif, analyse des erreurs, et adaptation continue aux méta-jeux.",
     "dates": [
-
-      "2022-01-16"
-    ],
-    "created_at": "2025-04-02T11:49:20.808Z",
-    "num_modification": 1,
-    "last_modification": "2025-04-04T13:54:43.819Z",
-    "attendees": []
-  },
-  {
-    "id": "129dd8dbe8c5",
-    "name": "Ayanna Calhoun",
-    "author": "Ex sit debitis et al",
-    "description": "Illo commodo exceptu",
-    "dates": [
-      "2005-06-20",
-      "1970-01-27",
-      "1973-06-26"
-    ],
-    "created_at": "2025-04-02T11:46:57.379Z",
-    "num_modification": 0,
-    "last_modification": "2025-04-02T11:46:57.379Z",
-    "attendees": []
-  },
-  {
-    "id": "f5b6564b5dc4",
-    "name": "My sweet 16",
-    "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
-    "author": "John Doe",
-    "dates": [
-      "2022-03-17",
-      "2022-03-18",
-      "2022-03-21",
-      "2022-03-22",
-
       "2025-04-14",
-      "2025-04-08",
+      "2025-04-15",
       "2025-04-16",
       "2025-04-17",
       "2025-04-18"
-
     ],
-    "created_at": "2025-04-07T08:06:38.000Z",
-    "num_modification": 1,
-    "last_modification": "2025-04-07T08:07:12.512Z",
+    "created_at": "2025-04-07T08:32:17.480Z",
+    "num_modification": 0,
+    "last_modification": "2025-04-07T08:32:17.480Z",
     "attendees": [
       {
         "name": "Jordan",
         "dates": [
           {
-            "date": "2025-04-08",
+            "date": "2025-04-14",
             "available": true
           },
           {
-            "date": "2025-04-14",
+            "date": "2025-04-15",
             "available": true
           },
           {
@@ -79,11 +44,11 @@
         "name": "Faker",
         "dates": [
           {
-            "date": "2025-04-08",
+            "date": "2025-04-14",
             "available": true
           },
           {
-            "date": "2025-04-14",
+            "date": "2025-04-15",
             "available": true
           },
           {
@@ -104,20 +69,20 @@
         "name": "Zeus",
         "dates": [
           {
-            "date": "2025-04-08",
+            "date": "2025-04-14",
             "available": true
           },
           {
-            "date": "2025-04-14",
+            "date": "2025-04-15",
             "available": false
           },
           {
             "date": "2025-04-16",
-            "available": true
+            "available": false
           },
           {
             "date": "2025-04-17",
-            "available": false
+            "available": true
           },
           {
             "date": "2025-04-18",
@@ -129,20 +94,20 @@
         "name": "Chovy",
         "dates": [
           {
-            "date": "2025-04-08",
-            "available": true
-          },
-          {
             "date": "2025-04-14",
             "available": true
           },
           {
-            "date": "2025-04-16",
+            "date": "2025-04-15",
             "available": false
           },
           {
+            "date": "2025-04-16",
+            "available": true
+          },
+          {
             "date": "2025-04-17",
-            "available": false
+            "available": true
           },
           {
             "date": "2025-04-18",
@@ -151,14 +116,14 @@
         ]
       },
       {
-        "name": "Skyyart",
+        "name": "Sardoche",
         "dates": [
           {
-            "date": "2025-04-08",
+            "date": "2025-04-14",
             "available": true
           },
           {
-            "date": "2025-04-14",
+            "date": "2025-04-15",
             "available": true
           },
           {
@@ -179,11 +144,11 @@
         "name": "Manu",
         "dates": [
           {
-            "date": "2025-04-08",
+            "date": "2025-04-14",
             "available": false
           },
           {
-            "date": "2025-04-14",
+            "date": "2025-04-15",
             "available": false
           },
           {

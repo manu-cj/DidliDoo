@@ -46,13 +46,15 @@ export default async function CardAllEvent(event) {
     eventTitle.className = "eventTitle";
     eventTitle.textContent = event.name;
     articleHeader.appendChild(eventTitle);
+
+
     // Créer et configurer la date de l'événement
- const eventDate = document.createElement('p');
-eventDate.className = "eventDate";
-eventDate.textContent = new Date(event.last_modification) > new Date(event.created_at) 
-    ? `Last modified: ${new Date(event.last_modification).toLocaleString()}` 
-    : `Created at: ${new Date(event.created_at).toLocaleString()}`;
-articleHeader.appendChild(eventDate);
+    const eventDate = document.createElement('p');
+    eventDate.className = "eventDate";
+    eventDate.textContent = new Date(event.last_modification) > new Date(event.created_at) 
+        ? `Last modified: ${new Date(event.last_modification).toLocaleString()}` 
+        : `Created at: ${new Date(event.created_at).toLocaleString()}`;
+    articleHeader.appendChild(eventDate);
 
 
     // Créer et configurer l'auteur de l'événement
