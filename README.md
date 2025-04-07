@@ -1,56 +1,100 @@
-# DidliDoo
+# 🎉 DidliDoo - Event Planner
+
+**DidliDoo** is a revolutionary application to organize events with friends, family, or colleagues.  
+Simple, effective, and collaborative — it helps you plan unforgettable moments with the people who matter!
+
+---
+
+## 🚀 The Mission
+
+You've been hired by a *truly disruptive* startup to build a modern front-end interface with the following features:
+
+- 🌱 Display all events, including each participant's availability  
+- 🌱 Create a new event  
+- 🌱 Add availability to an existing event  
+- 🌱 Edit an event's name, description, or author  
+- 🌱 Delete an event  
+- ✅ Validate inputs before sending them to the API:
+  - Required fields must be filled
+  - Maximum length: 256 characters
+  - Show appropriate error messages below inputs when validation fails
+
+### 🎁 Bonus Feature
+
+- 🌼 Display the best possible date for the event based on everyone's availability
+
+---
+
+## 🗂️ Project Structure
+
+# Structure du dossier `src/`
+
+## 📁 src
+Contient tout le code source de l'application.
+
+### 📁 assets
+Répertoire généralement utilisé pour stocker des fichiers statiques comme des images, icônes, polices, etc.
+(N'est pas développé dans l'image, donc pas de détails supplémentaires ici.)
+
+### 📁 components
+Contient les composants réutilisables de l'interface utilisateur.
+
+#### 📁 form
+Composants liés à la gestion des événements et de l'interface utilisateur :
+- `AddEvent.js` : Formulaire ou composant pour ajouter un événement.
+- `AddUser.js` : Composant pour ajouter un utilisateur.
+- `DeleteEventModal.js` : Fenêtre modale pour confirmer la suppression d'un événement.
+- `UpdateEvent.js` : Formulaire ou composant pour mettre à jour un événement.
+- `cardAllEvent.js` : Affichage des cartes d'événements.
+- `Header.js` : Composant pour l'en-tête de l'application.
+- `Modal.js` : Composant générique de modal.
+- `Notifications.js` : Gestion des notifications utilisateur.
+
+### 📁 lib
+Contient les fonctions de logique métier ou de gestion des données (appel API par exemple) :
+- `deleteEvent.js` : Fonction pour supprimer un événement.
+- `fetchEvent.js` : Fonction pour récupérer des événements.
+- `postAndPatchData.js` : Fonction pour créer ou modifier des données via API.
+
+### 📁 ui
+Contient les fichiers de style CSS :
+- `buttons.css` : Styles des boutons.
+- `cards.css` : Styles des cartes (probablement pour les événements).
+- `footer.css` : Styles du pied de page.
+- `form.css` : Styles pour les formulaires.
+- `header.css` : Styles de l'en-tête.
+- `main.css` : Styles généraux de la page principale.
+- `modal.css` : Styles pour les modales.
+- `notification.css` : Styles pour les notifications.
+
+### 📄 main.js
+Point d'entrée ou logique principale du frontend.
+
+### 📄 style.css
+Feuille de style globale.
 
 
-# Documentation du projet
+---
 
-## Structure du projet
 
-Ce projet suit une organisation claire pour séparer les différentes responsabilités et faciliter la maintenance du code.
+---
 
-```
-/src
-  ├── assets/       # Contient les ressources statiques (images, icônes, polices, etc.)
-  ├── components/   # Regroupe les composants réutilisables de l'interface utilisateur
-  ├── lib/          # Contient les fichiers de logique métier ou utilitaires
-  ├── ui/           # Contient les éléments liés à l'interface utilisateur (layouts, styles spécifiques, etc.)
-  ├── main.js       # Point d'entrée principal de l'application
-  ├── style.css     # Feuille de styles globale pour l'application
-```
+## 👨‍💻 Made with 💙 by
 
-## Bonnes pratiques pour un merge propre
+| Name | GitHub |
+|------|--------|
+| 🧠 Manu-cj | [@Manu-cj](https://github.com/Manu-cj) |
+| 🎨 Antoine Chapon | [@Antoine-chapon](https://github.com/Antoine-chap) |
+| 🛠️ Inna Kobets | [@InnaKobets](https://github.com/inna77777) |
 
-### 1. Mettre à jour la branche locale
-Avant de commencer un merge, assure-toi que ta branche locale est à jour :
-```sh
-# Se déplacer sur la branche principale
-git checkout main
-# Récupérer les dernières modifications
-git pull origin main
-```
+---
 
-### 2. Mettre à jour la branche de travail
-Si tu travailles sur une branche spécifique, mets-la à jour :
-```sh
-# Revenir sur la branche de travail
-git checkout feature/nom-de-la-branche
-# La mettre à jour avec main
-git merge dev
-```
-Si des conflits apparaissent, résous-les avant de continuer.
+## ✨ Final Note
 
-### 3. Tester le code après le merge
-Après avoir fusionné, teste le projet pour s'assurer que tout fonctionne bien.
+> *“If you want to go fast, go alone. If you want to go far, go with DidliDoo.”*  
+> — Probably someone on our team
 
-### 4. Pousser les modifications
-Une fois les tests validés, pousse ta branche mise à jour :
-```sh
-git push origin nom-de-la-branche
-```
+---
 
-### 5. Faire une Pull Request
-Lorsque tout est prêt, crée une pull request sur GitHub/GitLab et demande une revue de code avant de fusionner dans `dev`.
+💡
 
-### 6. Fusionner proprement
-Une fois approuvé, fusionne en privilégiant `Squash and Merge` pour garder un historique propre. Si un `merge commit` est nécessaire, assure-toi qu'il est bien documenté.
-
-En suivant ces étapes, tu garantis un historique Git propre et un code de qualité !
