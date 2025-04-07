@@ -22,57 +22,79 @@ You've been hired by a *truly disruptive* startup to build a modern front-end in
 ### 🎁 Bonus Feature
 
 - 🌼 Display the best possible date for the event based on everyone's availability
+### 🛠️ Error Handling and User Feedback
+
+To ensure a robust user experience, the application includes error handling mechanisms and a dedicated component for displaying errors to users.
+
+#### 1. Utilization of `try/catch` with `fetch`
+All API calls are wrapped in `try/catch` blocks to handle potential errors gracefully. This ensures that network issues or unexpected server responses do not crash the application.
+
+#### 2. HTTP Status Management
+The application handles various HTTP status codes and displays appropriate messages to the user:
+- **404 Not Found**: "The requested resource could not be found."
+- **401 Unauthorized**: "You are not authorized to perform this action. Please log in."
+- **500 Internal Server Error**: "An unexpected error occurred on the server. Please try again later."
+- **Other Errors**: A generic error message is shown for unhandled status codes.
+
+#### 3. Error Display Component
+A reusable `Notification` component has been created to display error messages to users. This component ensures consistent styling and behavior across the application.
+
+##### Example Usage:
+```jsx
+<ErrorNotification message="The requested resource could not be found." />
+```
+
+This approach improves the application's resilience and enhances the user experience by providing clear and actionable feedback.
+
 
 ---
 
 ## 🗂️ Project Structure
-
-# Structure du dossier `src/`
+# Structure of the `src/` Folder
 
 ## 📁 src
-Contient tout le code source de l'application.
+Contains all the source code of the application.
 
 ### 📁 assets
-Répertoire généralement utilisé pour stocker des fichiers statiques comme des images, icônes, polices, etc.
-(N'est pas développé dans l'image, donc pas de détails supplémentaires ici.)
+Directory generally used to store static files such as images, icons, fonts, etc.  
+(Not detailed here as it is not expanded in the project.)
 
 ### 📁 components
-Contient les composants réutilisables de l'interface utilisateur.
+Contains reusable user interface components.
 
 #### 📁 form
-Composants liés à la gestion des événements et de l'interface utilisateur :
-- `AddEvent.js` : Formulaire ou composant pour ajouter un événement.
-- `AddUser.js` : Composant pour ajouter un utilisateur.
-- `DeleteEventModal.js` : Fenêtre modale pour confirmer la suppression d'un événement.
-- `UpdateEvent.js` : Formulaire ou composant pour mettre à jour un événement.
-- `cardAllEvent.js` : Affichage des cartes d'événements.
-- `Header.js` : Composant pour l'en-tête de l'application.
-- `Modal.js` : Composant générique de modal.
-- `Notifications.js` : Gestion des notifications utilisateur.
+Components related to event management and user interface:
+- `AddEvent.js`: Form or component to add an event.
+- `AddUser.js`: Component to add a user.
+- `DeleteEventModal.js`: Modal window to confirm event deletion.
+- `UpdateEvent.js`: Form or component to update an event.
+- `cardAllEvent.js`: Displays event cards.
+- `Header.js`: Component for the application header.
+- `Modal.js`: Generic modal component.
+- `Notifications.js`: Handles user notifications.
 
 ### 📁 lib
-Contient les fonctions de logique métier ou de gestion des données (appel API par exemple) :
-- `deleteEvent.js` : Fonction pour supprimer un événement.
-- `fetchEvent.js` : Fonction pour récupérer des événements.
-- `postAndPatchData.js` : Fonction pour créer ou modifier des données via API.
+Contains business logic or data management functions (e.g., API calls):
+- `deleteEvent.js`: Function to delete an event.
+- `fetchEvent.js`: Function to fetch events.
+- `postAndPatchData.js`: Function to create or update data via API.
 
 ### 📁 ui
-Contient les fichiers de style CSS :
-- `buttons.css` : Styles des boutons.
-- `cards.css` : Styles des cartes (probablement pour les événements).
-- `footer.css` : Styles du pied de page.
-- `form.css` : Styles pour les formulaires.
-- `header.css` : Styles de l'en-tête.
-- `main.css` : Styles généraux de la page principale.
-- `modal.css` : Styles pour les modales.
-- `notification.css` : Styles pour les notifications.
+Contains CSS style files:
+- `buttons.css`: Styles for buttons.
+- `cards.css`: Styles for cards (likely for events).
+- `footer.css`: Styles for the footer.
+- `form.css`: Styles for forms.
+- `header.css`: Styles for the header.
+- `main.css`: General styles for the main page.
+- `modal.css`: Styles for modals.
+- `notification.css`: Styles for notifications.
 
 ### 📄 main.js
-Point d'entrée ou logique principale du frontend.
+Entry point or main logic of the frontend.
 
 ### 📄 style.css
-Feuille de style globale.
-
+Global stylesheet.
 
 ---
 
