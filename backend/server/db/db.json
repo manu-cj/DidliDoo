@@ -1,10 +1,11 @@
 [
   {
-    "id": "e59c907db8aa",
-    "name": "Deirdre Ray",
-    "author": "Aliquip exercitation",
-    "description": "Aliquip et neque lib",
+    "id": "288f1b8cdf3d",
+    "name": "Apprenez à maîtriser League of Legends avec Martin : passez de Fer à Diamant en perfectionnant vos stratégies et compétences de jeu",
+    "author": "Martin",
+    "description": "- Maîtrise des champions, optimisation des builds, vision et positionnement, communication et travail d'équipe.\n\n-Analyse des replays, amélioration de la mécanique, gestion des objectifs, et adaptation aux différents rôles.\n\n-Stratégies de jeu avancées, entraînement intensif, analyse des erreurs, et adaptation continue aux méta-jeux.",
     "dates": [
+<<<<<<< HEAD
       "2022-01-16"
     ],
     "created_at": "2025-04-02T11:49:20.808Z",
@@ -37,168 +38,286 @@
       "2022-03-18",
       "2022-03-21",
       "2022-03-22"
+=======
+      "2025-04-14",
+      "2025-04-08",
+      "2025-04-16",
+      "2025-04-17",
+      "2025-04-18"
+>>>>>>> antoine
     ],
+    "created_at": "2025-04-07T08:06:38.000Z",
+    "num_modification": 1,
+    "last_modification": "2025-04-07T08:07:12.512Z",
     "attendees": [
       {
-        "name": "Michou",
+        "name": "Jordan",
         "dates": [
           {
-            "date": "2022-03-17",
+            "date": "2025-04-08",
             "available": true
           },
           {
-            "date": "2022-03-18",
-            "available": false
+            "date": "2025-04-14",
+            "available": true
           },
           {
-            "date": "2022-03-21",
+            "date": "2025-04-16",
+            "available": true
+          },
+          {
+            "date": "2025-04-17",
+            "available": true
+          },
+          {
+            "date": "2025-04-18",
             "available": true
           }
         ]
       },
       {
-        "name": "Jean-Daniel",
+        "name": "Faker",
         "dates": [
           {
-            "date": "2022-03-17",
+            "date": "2025-04-08",
             "available": true
           },
           {
-            "date": "2022-03-21",
+            "date": "2025-04-14",
+            "available": true
+          },
+          {
+            "date": "2025-04-16",
+            "available": false
+          },
+          {
+            "date": "2025-04-17",
+            "available": false
+          },
+          {
+            "date": "2025-04-18",
             "available": true
           }
         ]
+      },
+      {
+        "name": "Zeus",
+        "dates": [
+          {
+            "date": "2025-04-08",
+            "available": true
+          },
+          {
+            "date": "2025-04-14",
+            "available": false
+          },
+          {
+            "date": "2025-04-16",
+            "available": true
+          },
+          {
+            "date": "2025-04-17",
+            "available": false
+          },
+          {
+            "date": "2025-04-18",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Chovy",
+        "dates": [
+          {
+            "date": "2025-04-08",
+            "available": true
+          },
+          {
+            "date": "2025-04-14",
+            "available": true
+          },
+          {
+            "date": "2025-04-16",
+            "available": false
+          },
+          {
+            "date": "2025-04-17",
+            "available": false
+          },
+          {
+            "date": "2025-04-18",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "Skyyart",
+        "dates": [
+          {
+            "date": "2025-04-08",
+            "available": true
+          },
+          {
+            "date": "2025-04-14",
+            "available": true
+          },
+          {
+            "date": "2025-04-16",
+            "available": true
+          },
+          {
+            "date": "2025-04-17",
+            "available": true
+          },
+          {
+            "date": "2025-04-18",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Manu",
+        "dates": [
+          {
+            "date": "2025-04-08",
+            "available": false
+          },
+          {
+            "date": "2025-04-14",
+            "available": false
+          },
+          {
+            "date": "2025-04-16",
+            "available": false
+          },
+          {
+            "date": "2025-04-17",
+            "available": false
+          },
+          {
+            "date": "2025-04-18",
+            "available": false
+          }
+        ]
       }
-    ],
-    "created_at": "2021-11-15T00:00",
-    "num_modification": 3,
-    "last_modification": "2021-11-15T02:15"
+    ]
   },
   {
-    "id": "38b643aeb883",
-    "name": "The big sale @ The Mall",
-    "description": "I want to buy stuff at the mall, but don't want to go alone who is up?",
-    "author": "Jean D'eau",
+    "id": "c8b40d6e27e7",
+    "name": "Cours de CSS avec le King",
+    "author": "King Of CSS",
+    "description": "Le cours \"Le Roi du CSS\" vous plonge dans l'univers fantastique du design web, où chaque ligne de code est une incantation magique transformant vos idées en réalité visuelle. Apprenez à maîtriser les sorts de style et de mise en page pour créer des interfaces enchantées qui captivent et inspirent.",
     "dates": [
-      "2022-01-10",
-      "2022-02-10",
-      "2022-03-10",
-      "2022-03-11",
-      "2022-03-12"
+      "2025-04-11",
+      "2025-04-15",
+      "2025-04-10"
     ],
+    "created_at": "2025-04-07T07:54:09.140Z",
+    "num_modification": 0,
+    "last_modification": "2025-04-07T07:54:09.140Z",
     "attendees": [
       {
-        "name": "Michou",
+        "name": "Steve Jobs",
         "dates": [
           {
-            "date": "2022-01-10",
+            "date": "2025-04-10",
+            "available": true
+          },
+          {
+            "date": "2025-04-11",
+            "available": false
+          },
+          {
+            "date": "2025-04-15",
             "available": true
           }
         ]
       },
       {
-        "name": "Jane Doe",
+        "name": "Bill Gates",
         "dates": [
           {
-            "date": "2022-01-10",
+            "date": "2025-04-10",
             "available": true
           },
           {
-            "date": "2022-02-10",
+            "date": "2025-04-11",
             "available": true
           },
           {
-            "date": "2022-03-10",
+            "date": "2025-04-15",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Elon Musk",
+        "dates": [
+          {
+            "date": "2025-04-10",
             "available": true
           },
           {
-            "date": "2022-03-11",
-            "available": true
+            "date": "2025-04-11",
+            "available": false
           },
           {
-            "date": "2022-03-12",
+            "date": "2025-04-15",
             "available": false
           }
         ]
       },
       {
-        "name": "bob",
+        "name": "Mark Zuckerberg",
         "dates": [
           {
-            "date": "2022-01-10",
+            "date": "2025-04-10",
             "available": true
           },
           {
-            "date": "2022-02-10",
+            "date": "2025-04-11",
             "available": false
           },
           {
-            "date": "2022-03-10",
+            "date": "2025-04-15",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Jeff Bezos",
+        "dates": [
+          {
+            "date": "2025-04-10",
             "available": true
           },
           {
-            "date": "2022-03-11",
-            "available": false
+            "date": "2025-04-11",
+            "available": true
           },
           {
-            "date": "2022-03-12",
+            "date": "2025-04-15",
             "available": false
           }
         ]
       },
       {
-        "name": "bobbob",
+        "name": "Steve Wozniak",
         "dates": [
           {
-            "date": "2022-01-10",
-            "available": false
-          },
-          {
-            "date": "2022-02-10",
-            "available": false
-          },
-          {
-            "date": "2022-03-10",
+            "date": "2025-04-10",
             "available": true
           },
           {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
-            "available": false
-          }
-        ]
-      },
-      {
-        "name": "shish",
-        "dates": [
-          {
-            "date": "2022-01-10",
+            "date": "2025-04-11",
             "available": false
           },
           {
-            "date": "2022-02-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-10",
-            "available": false
-          },
-          {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
+            "date": "2025-04-15",
             "available": true
           }
         ]
       }
-    ],
-    "created_at": "2021-11-13T14:00",
-    "num_modification": 0,
-    "last_modification": "2021-11-13T14:00"
+    ]
   }
 ]
